@@ -1,18 +1,17 @@
 var gulp = require('gulp')
 var sass = require('gulp-sass')
-var postcss      = require('gulp-postcss')
-var sourcemaps   = require('gulp-sourcemaps')
-var autoprefixer = require('autoprefixer')
+var postcss = require('gulp-postcss')
+var assets = require('postcss-assets')
 var processors
+var options
 
 gulp.task('styles', function() {
-  processors = [
-    autoprefixer
-  ]
-
   gulp.src('sass/**/*.scss')
   .pipe(sass())
-  .pipe(postcss(processors))
+  .pipe(postcss([assets({
+      loadPaths: ['images/', 'media/', 'src/'],
+      relative: './',
+    })]))
   .pipe(gulp.dest('./'))
 })
 

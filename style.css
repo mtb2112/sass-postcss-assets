@@ -1,20 +1,17 @@
+div {
+  background: url('images/arnold-noodles.gif'); }
+
+p {
+  background: url('media/arnold-shut-up.gif'); }
+
+ul {
+  background: url('src/arnold-handshake.gif'); }
+
+div,
+p,
+ul {
+  height: 500px;
+  background-size: auto; }
+
 body {
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
-  border-radius: 10px; }
-
-a {
-  -webkit-filter: grayscale(50%);
-          filter: grayscale(50%); }
-
-::-webkit-input-placeholder {
-  color: gray; }
-
-:-ms-input-placeholder {
-  color: gray; }
-
-::-ms-input-placeholder {
-  color: gray; }
-
-::placeholder {
-  color: gray; }
+  height: 100px; }

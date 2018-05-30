@@ -1,13 +1,22 @@
+div {
+  background: resolve('arnold-noodles.gif');
+}
+
+p {
+  background: resolve('arnold-shut-up.gif');
+}
+
+ul {
+  background: resolve('arnold-handshake.gif');
+}
+
+div,
+p,
+ul {
+  height: 500px;
+  background-size: auto;
+}  
+
 body {
-  transform: rotate(30deg);
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-}
-
-a {
-  filter: grayscale(50%);
-}
-
-::placeholder {
-  color: gray;
+  height: 100px;
 }
