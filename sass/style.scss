@@ -1,0 +1,13 @@
+body {
+  transform: rotate(30deg);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+a {
+  filter: grayscale(50%);
+}
+
+::placeholder {
+  color: gray;
+}
